@@ -1,0 +1,822 @@
+/* Font family is : font-family: 'Ubuntu', sans-serif; 
+Colors used : Sage #D9E6D9 , Black #000000 , White #ffffff
+Drop down opacity is 75%
+
+image sections with text on top : make the images bg images in CSS
+*/
+
+*{
+    font-family: 'ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*header styles*/
+.nav-header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: baseline;
+}
+
+.nav-header img {
+    align-self: center;
+}
+
+.logo{
+    max-width: 350px;
+}
+
+.logo-button {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    padding: 20px;
+}
+
+.navbar ul {
+    margin-bottom: 0px;
+    padding-right: 0px;
+}
+
+.navbar .nav-item{
+    display: inline-block;
+}
+
+.navbar .nav-item a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.navbar .nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
+}
+
+.class-dropdown{
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    padding: 30px;
+}
+
+.class-dropdown li{
+    display: block;
+}
+
+.class-dropdown li a{
+    color: black;
+}
+
+.navbar .nav-item:hover .class-dropdown {
+    display: block;
+}
+
+.about-dropdown{
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    padding: 30px;
+}
+
+.about-dropdown li{
+    display: block;
+}
+
+.navbar .nav-item:hover .about-dropdown {
+    display: block;
+}
+
+.header-bar {
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0;
+}
+
+/*Home page styles */
+
+.section-1{
+    background-image: url(../html/images/gowns_backtage.jpg);
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+.s1-text{
+    max-width: 800px;
+    padding: 200px 50px 200px 200px;
+}
+
+.section-2{
+    display: flex;
+    color: black;
+    padding: 50px;
+}
+
+s2-text{
+    padding-left: 25px;
+}
+
+.section-2 img{
+    max-width: 40%;
+    border-radius: 80px;
+    align-self: center;
+    padding-right: 25px;
+}
+
+.section-2 button{
+    border: 0px;
+    outline: none;
+    border-radius: 50px;
+    background-color: #D9E6D9;
+    font-weight: 500;
+    padding: 15px 30px;
+    max-width: 200px;
+}
+.section-2 button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.section-3{
+    display: flex;
+    background-color: #D9E6D9;
+    padding: 80px;
+}
+
+s3-text{
+    padding: 30px;
+}
+
+#siblings-red{
+    max-width: 30%;
+    align-self: center;
+    border-radius: 80px;
+    padding-left: 15;
+    padding-right: 15;
+}
+
+#blue-dancing{
+    max-width: 30%;
+    align-self: center;
+    border-radius: 80px;
+}
+
+.section-4{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 80px;
+}
+
+.section-5{
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/black_ballerinas.jpg);
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:300px;
+}
+
+.section-5 button{
+    border: 0px;
+    outline: none;
+    border-radius: 50px;
+    background-color: #D9E6D9;
+    font-weight: 500;
+    padding: 15px 30px;
+    margin: 10px;
+    max-width: 200px;
+}
+
+.section-5 button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+/* Class page styles */
+
+.class-header {
+    background-color: #D9E6D9; 
+    padding: 50px;
+}
+
+.class-header h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.class-intro{
+    background-image: url(images/dance_class.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 500px 50px 30px 50px;
+    color: white;
+}
+
+.class-s1{
+    padding: 50px;
+}
+
+.class-s1 h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+/*calendar styles */
+
+.calendar {
+    background-color: black;
+    padding: 50px;
+    color: white;
+    border-radius: 40px;
+    margin: 50px;
+    margin-top: 0px;
+}
+
+.calendar-title {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.day-names {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.day-names li {
+    margin: 0rem 2rem;
+}
+
+.bar {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+}
+
+.days li {
+    margin: 0rem 1rem;
+}
+
+.event {
+    margin: 16px 0px;
+    background-color: #D9E6D9;
+    color: black;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.vertical {
+    border: 2px solid #eee;
+    border-radius: 5px;
+    width: 0;
+    height: 150px;
+    margin: 16px 0px;
+}
+
+
+@media (min-width: 992px){
+    .date{
+        font-size: 1.5rem;
+    }
+}
+
+/* calendar animation */
+
+.calendar h1{
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    0%{
+        margin-left: 0%;
+    }
+    
+    50%{
+        margin-left: 20%;
+    }
+    
+    100% {
+        margin-left: 0%;
+    }
+    
+} 
+
+/*class page styles continued */
+
+.class-s2 {
+    background-color: #D9E6D9; 
+    padding: 50px;
+}
+
+.class-s3{
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+
+.class-s4 {
+    padding: 50px;
+}
+
+
+.class-s5 {
+    background-color: #D9E6D9;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+
+.class-s5-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.class-s5 img {
+    max-width: 50%;
+    align-self: center;
+}
+
+
+/*monthly-calendar page styles */
+
+.calendar-header {
+    background-color: #D9E6D9; 
+    padding: 50px;
+}
+
+.monthly-calendar {
+    background-color: black;
+    padding: 50px;
+    color: white;
+    border-radius: 40px;
+    margin: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    text-align: right;
+    background-color: #D9E6D9;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: black;
+}
+
+/* calendar dropdown styles*/
+
+.accordion{
+    list-style: none;
+    color: black;
+    max-width: 100%;
+    width:100%;
+    margin: 30px auto 20px;
+    background: #D9E6D9;
+    border-radius: 0;
+}
+
+.accordion a {
+    color: black;
+    text-decoration: none;
+}
+
+.accordion .link {
+    cursor:pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: black;
+    font-size: 14px;
+    border-bottom: 1px solid white;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+
+
+/* About page styles */
+
+.about-header {
+    background-color: #D9E6D9; 
+    padding: 50px;
+}
+
+.about-header h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.about-intro{
+    background-image: url(images/cast_crew.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 750px 50px 30px 50px;
+    color: white;
+}
+
+
+.about-s1{
+    padding: 50px;
+}
+
+
+.about-s2 {
+    background-color: #D9E6D9; 
+    padding: 50px;
+}
+
+
+.about-s3{
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+
+.about-s4 {
+    padding: 50px;
+}
+
+
+
+
+/*universal styles*/
+.secondary-page-header {
+    background-color: #D9E6D9; 
+    padding: 50px;
+}
+
+.secondary-page-header h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.secondary-page-intro-h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about-s1{
+    padding: 50px;
+}
+
+.section-head {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+
+/*program structure page styles */
+
+.ps-intro {
+    background-image: url(images/sillouhette_curtain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 750px 50px 30px 50px;
+    color: white;
+}
+
+.ps-s1 {
+    padding: 50px;
+}
+
+.ps-s2 {
+    background-color: #D9E6D9;
+    padding: 50px;
+}
+
+
+.ps-s3 {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+.ps-s4 {
+    display: flex;
+    /*NEED TO CROP PHOTO*/
+}
+.ps-s4 img {
+    align-self: center;
+}
+
+.ps-s4-info{
+    padding: 50px;
+}
+
+
+/* Galley page styles */
+
+.gallery-intro{
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+.gallery-intro h3{
+    padding-bottom: 20px;
+}
+
+.gallery-buttons button{
+    display: inline-flex;
+    border: 0px;
+    outline: none;
+    border-radius: 50px;
+    background-color: white;
+    font-weight: 500;
+    padding: 15px 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 200px;
+}
+.gallery-buttons button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.gallery-imgs{
+    margin: 50px;
+}
+
+.gallery-imgs img{
+    align-self: center;
+    padding: 25px;
+}
+
+/*policy page styles */
+
+.policy-intro-text {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+.form-section{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-section button {
+    display: inline-flex;
+    border: 0px;
+    outline: none;
+    border-radius: 50px;
+    background-color: white;
+    font-weight: 500;
+    padding: 15px 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 200px;
+}
+.form-section button {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 500px;
+}
+
+
+/*register page styles */
+
+.register-intro{
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+.forms{
+    padding:50px;
+    
+}
+
+.forms h1 {
+    text-align: center;
+    padding-top: 25px;
+    Padding-bottom: 25;
+    font-weight: 700;
+}
+
+.contactus{
+    margin: 50px;
+    text-align: center;
+    
+}
+
+form{
+    margin: 50px 100px;
+    background-color: #D9E6D9;
+    padding: 50px;
+    border-radius: 30px;
+    
+}
+ 
+input[type=text], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=submit], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+/*contact page styles */
+
+.contact-form{
+    padding:50px;
+    
+}
+
+.contact-form h1 {
+    text-align: center;
+    padding-top: 25px;
+    Padding-bottom: 25;
+    font-weight: 700;
+}
+
+.contactus{
+    margin: 50px;
+    text-align: center;
+    
+}
+
+form{
+    margin: 50px 100px;
+    background-color: #D9E6D9;
+    padding: 50px;
+    border-radius: 30px;
+    
+}
+ 
+input[type=text], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=submit], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+/*??? page styles */
+/*??? page styles */
+/*??? page styles */
+/*??? page styles */
+/*??? page styles */
+/*??? page styles */
+/*??? page styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer-contact{
+    text-align:center;
+}
+
+footer button{
+    border: 0px;
+    outline: none;
+    background: none;
+    font-weight: 500;
+    color: white;
+    padding: 0;
+}
+
+footer button a {
+    text-decoration: none;
+    color: white;
+}
+
+footer button a:hover {
+    text-decoration: none;
+    color: black;
+} 
+
+.top-and-bar:hover{
+    text-decoration: none;
+    color: black;
+    background-color: #D9E6D9;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.top-bar{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0;
+}
